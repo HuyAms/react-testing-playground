@@ -2,17 +2,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import UserDetails from "./screens/UserDetails";
-import UserList from "./screens/UserList";
+import Home from "./screens/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <UserList/>,
-  },
-  {
-    path: "/users/:id",
-    element: <UserDetails/>,
+    element: <Home/>,
   },
 ]);
 
